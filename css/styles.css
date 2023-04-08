@@ -56,12 +56,19 @@ button{
    /**--------HEADER-------*/ 
 
 .header{
-    width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
     background-color:var(--text-btn-color);
     border-bottom: 1px solid var(--accent);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
+}
+.header-nav{
+    display: flex;
 }
 .header-logo{
     font-family: 'Raleway', sans-serif;
@@ -71,17 +78,17 @@ button{
     letter-spacing:  0.03em;
     text-transform: uppercase;
     color:var(--brand-color);
-    margin-right: 76px;
 }
 .header-logo-studio{
  color: var(--secondary-color);
 } 
 .menu-open-btn{
+    background-color: transparent;
     border: none;
     border-color: transparent;
 }
 .menu-open-icon{
-    fill: var(--secondary-color);
+   stroke : var(--secondary-color);
 }
 .header-list{
     display: none;   
@@ -89,12 +96,6 @@ button{
 .header-adress{
     display: none;
 }
-.header-nav{
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
 .mob-menu {
     position: fixed;
     top: 0;
@@ -110,8 +111,12 @@ button{
     overflow: auto;
     
 }
+.mob-menu.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .mob-menu-close-btn {
-    
     display: flex;
     margin-left: auto;
     justify-content: center;
@@ -177,9 +182,6 @@ button{
 .team-soc-link:active{
     background-color: var(--Pressed-state); 
 }
-
-
-
 /**--------HERO-------*/ 
 /**скритий заголовок*/
 .visually-hidden{
@@ -390,17 +392,16 @@ button{
 /**--------FOOTER-------*/ 
 .footer{
     background-color: var(--secondary-color);
-    padding: 97px 15px;
+    padding: 100px 0;
 }
-.container-footer{
+.footer-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: var(--card-set-gap)*3;
+    gap: 72px;
 }
-  
 .logo-footer-studio{
     color: var(--light-mode-backgrounds);
 }
@@ -434,7 +435,6 @@ button{
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-top: 16px;
 }
 .footer-soc-item{
     width: 40px;
@@ -459,12 +459,13 @@ button{
     background-color: var(--green);
 }
 .footer-container3{
-    margin-left: 80px;
-    width: 453px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
 }
 .footer-form{
-    display: flex;
-    gap: var(--card-set-gap);
+    justify-content: center;
+    align-items: center;
 }
 .footer-label{
     min-width: 264px;
@@ -482,6 +483,7 @@ button{
     color: var(--text-btn-color);
     padding: 8px 16px;
     background-color: var(--secondary-color);  
+    margin-bottom: 16px;
 }
 .footer-input::placeholder{
     color: var(--text-btn-color);
