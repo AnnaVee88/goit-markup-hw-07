@@ -504,6 +504,7 @@ button{
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
+    margin: auto;
     transition:background-color var(--transition-duration-and-fund);
 }
 .footer-button:hover,
