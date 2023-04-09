@@ -104,7 +104,7 @@ button{
     height: 100%;
     background: var(--text-btn-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding: var(--card-set-gap) var(--card-set-gap) 40px 40px;
+    padding: 80px var(--card-set-gap) 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,6 +117,9 @@ button{
     pointer-events: none;
 }
 .mob-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
     margin-left: auto;
     justify-content: center;
@@ -127,7 +130,6 @@ button{
     border: 1px solid var(--accent);
     border-radius: 50%;
     transition: background-color var(--transition-duration-and-fund);
-    margin-bottom: 32px;
 }
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -140,8 +142,16 @@ button{
     text-transform: capitalize;
     color: var(--secondary-color);
 }
+.mob-menu-link-studio{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--Pressed-state);
+}
 .mob-menu-adress-item{
-    margin-top: 40px;
+    margin-bottom: 48px;
 }
 .mob-menu-tel{
     font-weight: 500;
@@ -151,7 +161,7 @@ button{
 }
 .tel {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -160,8 +170,7 @@ button{
 }
 .mob-menu-soc-list {
     display: flex;
-    justify-content: center;
-    gap: 56px;
+    gap: 36px;
     margin-top: 48px; 
 }
 .mob-menu-soc-item {
@@ -197,8 +206,6 @@ button{
     overflow: hidden;
 }
 .hero{
-    display: flex;
-    justify-content: center;
     width : 100%;
     margin: 0 auto;
     background-color:var(--secondary-color);
@@ -215,12 +222,12 @@ button{
     background-size: cover;
 }
 .hero-text{
-    font-weight:700;
+    font-weight:700px;
     font-size: 36px;
     letter-spacing: 0.02em;
     line-height: 1.11;
     color:var(--text-btn-color);
-    max-width: 320px;
+    width: 320px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -302,6 +309,13 @@ button{
     letter-spacing: 0.02em;
     color:var(--secondary-color);
     margin-bottom: 8px; 
+}
+.team-bottom{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+
 }
 .team-item{
     background-color: var(--text-btn-color);
@@ -412,6 +426,7 @@ button{
     letter-spacing: 0.02em;
     color:var(--accent);
     margin-top: 16px;
+    text-align: left;
 }
 .footer-logo{
     font-family: 'Raleway', sans-serif;
@@ -724,7 +739,7 @@ button{
     width: 66px;
     height: 4px;
     left: 0px;
-    top: 44px;
+    top: 43px;
     background:var(--Pressed-state);
     border-radius: 2px;
 }

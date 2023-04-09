@@ -28,6 +28,10 @@
     .container {
         width: 768px;
     }
+    .header-container{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
     .menu-open-btn{
         display: none;
     }
@@ -50,7 +54,7 @@
         position: relative;
         font-weight: 500;
         font-size: 16px;
-        line-height: 1.5;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color:var(--secondary-color); 
         transition: color var(--transition-duration-and-fund);
@@ -64,7 +68,7 @@
         width: 48px;
         height: 4px;
         left: 0px;
-        top: 44px;
+        top: 48px;
         background-color:var(--Pressed-state);
         border-radius: 2px;
     } 
@@ -80,8 +84,8 @@
     }
     .link-tel{
         list-style: none;
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--primary-color); 
         transition: color var(--transition-duration-and-fund);
@@ -99,6 +103,12 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
         ), url(../images/hero-tablet-bg.jpg) ;
+    }
+    .hero-text{
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        width: 496px;
     }
     .about-list{
         column-gap: var(--card-set-gap);
@@ -184,6 +194,13 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .header-container{
+        padding-top: var(--card-set-gap);
+        padding-bottom: var(--card-set-gap);
+    }
+    .bottom-studio::after{
+        top: 43px;
+    }
     .section{
         padding-top: 120px;
         padding-bottom: 120px;
@@ -196,23 +213,28 @@
         gap: 40px;
     }
     .hero{
-       max-width : 1440px; 
-       background-image:linear-gradient(
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width : 1440px; 
+        background-image:linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
         ),  url(../images/hero-desctop-bg.jpg);
+    }
+    .hero-text{
+        margin-bottom: 48px;
     }
     .about{
         padding-top: 120px;
         padding-bottom: 0;
     }
-     .about-list{
+    .about-list{
         gap: var(--card-set-gap);
     }
-     .about-item{
+    .about-item{
         flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4); 
     }
-     .icon-container{
+    .icon-container{
         width: 264px;
         height: 112px;
         display: flex;
@@ -241,7 +263,7 @@
         margin-bottom: 72px;
     }
     .doing{
-       display: flex;
+       display: block;
     }
     .doing-list{
         display: flex;
@@ -294,6 +316,7 @@
         width: 453px;
         margin-left: 80px;
     }
+  
 }
   
 
