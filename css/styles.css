@@ -150,8 +150,10 @@ button{
     text-transform: capitalize;
     color: var(--brand-color);
 }
-.mob-menu-adress-item{
-    margin-bottom: 40px;
+.mob-menu-adress-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .mob-menu-tel{
     font-weight: 500;
