@@ -3,6 +3,9 @@
     .container{
         width: 428px;
     }
+    .tel{
+        font-size: 36px;
+    }
     .customers-item{
         width: calc((100% - 16px) / 2);
    }
@@ -109,6 +112,7 @@
         line-height: 1.07;
         margin-bottom: 36px;
         width: 496px;
+        text-transform: none;
     }
     .about-list{
         column-gap: var(--card-set-gap);
@@ -173,6 +177,19 @@
     .footer-input{
         margin-bottom: 0;
     }
+    .bottom-portfolio::after{
+        position: absolute;
+        content: "";
+        width: 66px;
+        height: 4px;
+        left: 0px;
+        top: 48px;
+        background:var(--Pressed-state);
+        border-radius: 2px;
+    }
+    .bottom-portfolio{
+        color: var(--Pressed-state);
+    }
 }
     
 
@@ -212,9 +229,12 @@
         flex-direction: row;
         gap: 40px;
     }
+    .link-tel{
+        font-size: 16px;
+    }
     .hero{
-        padding-top: 112px;
-        padding-bottom: 112px;
+        padding-top: 188px;
+        padding-bottom: 188px;
         max-width : 1440px; 
         background-image:linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -316,6 +336,10 @@
         width: 453px;
         margin-left: 80px;
     }
+    .bottom-portfolio::after{
+        top: 43px;
+    }
+    
   
 }
   

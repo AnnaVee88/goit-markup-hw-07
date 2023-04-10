@@ -148,10 +148,12 @@ button{
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--Pressed-state);
+    color: var(--brand-color);
 }
-.mob-menu-adress-item{
-    margin-bottom: 48px;
+.mob-menu-adress-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 .mob-menu-tel{
     font-weight: 500;
@@ -166,11 +168,10 @@ button{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--brand-color);
-
 }
 .mob-menu-soc-list {
     display: flex;
-    gap: 36px;
+    gap: var(--card-set-gap);
     margin-top: 48px; 
 }
 .mob-menu-soc-item {
@@ -224,10 +225,10 @@ button{
 .hero-text{
     font-weight:700px;
     font-size: 36px;
-    letter-spacing: 0.02em;
     line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color:var(--text-btn-color);
-    width: 320px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -243,7 +244,7 @@ button{
     color: var(--text-btn-color);
     padding: 16px 32px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
     min-width: 169px;
     transition:background-color var(--transition-duration-and-fund);
 }
@@ -730,19 +731,7 @@ button{
     border: 0px solid transparent;
 }
 /**--------PORTFOLIO-------*/ 
-.bottom-portfolio{
-    color: var(--Pressed-state);
-}
-.bottom-portfolio::after{
-    position: absolute;
-    content: "";
-    width: 66px;
-    height: 4px;
-    left: 0px;
-    top: 43px;
-    background:var(--Pressed-state);
-    border-radius: 2px;
-}
+
 .choice-btn{
     font-family: 'Roboto',sans-serif;
     font-weight: 500;
@@ -756,7 +745,7 @@ button{
     padding: 12px 24px;
     display: block;
     margin: 0 auto;  
-    min-width: 69px;
+    min-width: 53px;
     transition: border-color var(--transition-duration-and-fund), background-color var(--transition-duration-and-fund),color var(--transition-duration-and-fund), box-shadow var(--transition-duration-and-fund) ;
 }
 .choice-btn:hover,
