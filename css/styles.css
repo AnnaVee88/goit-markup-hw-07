@@ -762,15 +762,14 @@ button{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .choice{
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 .choice-list{
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: var(--card-set-gap); 
+    flex-wrap: wrap;
+    gap: 16px var(--card-set-gap); 
 }
 /**---------GALERY-----*/
 .txt-top{
@@ -786,19 +785,25 @@ button{
     letter-spacing: 0.02em;
     color: var(--primary-color);
     margin-top: 8px;
- 
 }
 .card-content{
     padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
-    border-left: 1px solid var(--accent);
-    border-bottom: 1px solid var(--accent);
-    border-right: 1px solid var(--accent); 
+}
+.galery-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: calc(var(--card-set-gap)*2);
 }
 .galery-link{
     display:block;
+    border: 1px solid var(--light-mode-backgrounds);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     transition: box-shadow var(--transition-duration-and-fund);
+}
+.galery-item{
+gap: 24px;
 }
 .galery-link:hover,
 .galery-link:focus{
@@ -809,15 +814,7 @@ button{
 .galery-link:focus .overlay{
     transform: translate(0, 0); 
 } 
-.galery-list{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: var(--card-set-gap);
-    row-gap: calc(var(--card-set-gap)*2 );
-}
-.galery-item{
-   flex-basis: calc((100% - 2 * var(--card-set-gap))/3);
-}
+
 .galery-list-img-wrapper{
     position: relative;
     overflow: hidden;

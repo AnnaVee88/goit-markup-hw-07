@@ -190,6 +190,22 @@
     .bottom-portfolio{
         color: var(--Pressed-state);
     }
+    .choice-list{
+        margin-bottom: 64px; 
+        justify-content: center;
+        gap: var(--card-set-gap); 
+    }
+    .choice{
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+    .galery-list{
+        column-gap: var(--card-set-gap);
+        row-gap: calc(var(--card-set-gap)*3 );
+   }
+    .galery-item{
+        flex-basis: calc((100% - var(--card-set-gap))/2);
+    }
 }
     
 
@@ -325,7 +341,7 @@
     .footer > .container {
         max-width: 1158px;
    }
-   .footer-container1{
+    .footer-container1{
        width: 264px;
        margin-right: 120px;
     }
@@ -339,7 +355,20 @@
     .bottom-portfolio::after{
         top: 43px;
     }
-    
+    .choice{
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }  
+    .choice-list{
+        margin-bottom: 72px; 
+    }
+    .galery-list{
+        row-gap: calc(var(--card-set-gap)*2 );
+   }
+    .galery-item{
+        flex-basis: calc((100% - 2 * var(--card-set-gap))/3);
+    }
+   
   
 }
   
